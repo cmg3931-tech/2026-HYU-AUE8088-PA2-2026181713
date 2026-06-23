@@ -1,0 +1,45 @@
+{
+  "di_formula": "(Avg-MF1_ours - Avg-MF1_random) / Avg-MF1_random",
+  "di_score": 0.013600644973442414,
+  "random_baseline": "random_1000",
+  "student_pick_for_di": "ours_1000",
+  "best_ablation": "ours_500",
+  "results": [
+    {
+      "run_name": "random_1000",
+      "num_picks": 1000,
+      "avg_macro_f1": 0.6608363972197493,
+      "weather": 0.5470300350232594,
+      "scene": 0.6356948775413643,
+      "timeofday": 0.799784279094624,
+      "checkpoint": "checkpoints/level5_random_1000.pth"
+    },
+    {
+      "run_name": "ours_250",
+      "num_picks": 250,
+      "avg_macro_f1": 0.6489975681149959,
+      "weather": 0.5253587543715502,
+      "scene": 0.6288485586160814,
+      "timeofday": 0.7927853913573558,
+      "checkpoint": "checkpoints/level5_ours_250.pth"
+    },
+    {
+      "run_name": "ours_500",
+      "num_picks": 500,
+      "avg_macro_f1": 0.6749839762885168,
+      "weather": 0.544694615904394,
+      "scene": 0.6739895066933502,
+      "timeofday": 0.8062678062678063,
+      "checkpoint": "checkpoints/level5_ours_500.pth"
+    },
+    {
+      "run_name": "ours_1000",
+      "num_picks": 1000,
+      "avg_macro_f1": 0.6698241984438639,
+      "weather": 0.5390620532477611,
+      "scene": 0.6658532292495026,
+      "timeofday": 0.8045573128343282,
+      "checkpoint": "checkpoints/level5_final.pth"
+    }
+  ]
+}
